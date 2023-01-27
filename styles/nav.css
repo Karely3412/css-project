@@ -14,7 +14,23 @@
 
 .navigation-wrapper > .links-wrapper > .nav-link,
 .navigation-wrapper > .search-icon-wrapper > .nav-link {
-  display: inline block;
+  display: inline-block;
   padding: 15px 13px;
   cursor: pointer;
+}
+
+.navigation-wrapper > .search-icon-wrapper > .nav-link {
+  height: 100%;
+  width: 30px;
+  text-align: center;
+}
+
+/* .navigation-wrapper > div > div:hover {
+  color: black;
+  background-color: white;
+} */
+
+.navigation-wrapper > .search-icon-wrapper > .nav-link:hover {
+  background-color: red;
+  color: white;
 }
