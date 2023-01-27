@@ -1,3 +1,20 @@
 .navigation-wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.navigation-wrapper > .links-wrapper {
+  height: 100%;
+}
+
+.navigation-wrapper > .links-wrapper > .nav-link,
+.navigation-wrapper > .search-icon-wrapper > .nav-link {
+  display: inline block;
+  padding: 15px 13px;
+  cursor: pointer;
 }
