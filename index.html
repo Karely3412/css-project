@@ -5,34 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Css Project</title>
+
     <script
       src="https://kit.fontawesome.com/862f7ccbf1.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/nav.css" />
   </head>
   <body>
     <div class="navigation-wrapper">
       <div class="links-wrapper">
         <div class="nav-link">
-          <a href="#">i Home</a>
+          <a href="#">Home</a>
         </div>
 
         <div class="nav-link">
-          <a href="#">i About</a>
+          <a href="#about"><i class="fa-solid fa-user"></i> About</a>
         </div>
 
         <div class="nav-link">
-          <a href="#">i Portfolio</a>
+          <a href="#portfolio"
+            ><i class="fa-solid fa-grip-vertical"></i> Portfolio</a
+          >
         </div>
 
         <div class="nav-link">
-          <a href="#">i Contact</a>
+          <a href="#contact"><i class="fa-solid fa-phone"></i> Contact</a>
         </div>
       </div>
 
       <div class="search-icon-wrapper">
         <div class="nav-link">
-          <a href="#">i</a>
+          <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
       </div>
     </div>
@@ -41,7 +54,7 @@
         <span>Hello everyone</span>
       </div>
     </div>
-    <div class="about-wrapper">
+    <div id="about" class="about-wrapper">
       <h3>About Me</h3>
       <p>Welcome to my page!</p>
       <p>
@@ -52,7 +65,9 @@
       </p>
       <div class="about-me">
         <div class="about-content-photo-wrapper">
-          <div class="profile-icon-wrapper">i Karely Partida</div>
+          <div class="profile-icon-wrapper">
+            <i class="fa-solid fa-user"></i> Karely Partida
+          </div>
           <img
             src="images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg"
             alt="Code screen"
@@ -116,6 +131,138 @@
         <br />
         Lines of code written
       </div>
+    </div>
+
+    <!-- Protfolio BG Parallax -->
+    <div class="portfilio-bg-wrapper">
+      <div class="portfolio-bg-content">
+        <span>Portfolio</span>
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="about-wrapper">
+      <h3>My Work</h3>
+      <p>
+        Here are some samples of my work projects.<br />
+        Click through each image to see more!
+      </p>
+      <div class="portfolio-items-grid">
+        <div class="portfolio-image-wrapper">
+          <img
+            src="http://source.unsplash.com/random?tech"
+            alt="portfilio tech items"
+          />
+        </div>
+        <div class="portfolio-image-wrapper">
+          <img
+            src="http://source.unsplash.com/random?tech"
+            alt="portfilio tech items"
+          />
+        </div>
+        <div class="portfolio-image-wrapper">
+          <img
+            src="http://source.unsplash.com/random?tech"
+            alt="portfilio tech items"
+          />
+        </div>
+        <div class="portfolio-image-wrapper">
+          <img
+            src="http://source.unsplash.com/random?tech"
+            alt="portfilio tech items"
+          />
+        </div>
+        <div class="portfolio-image-wrapper">
+          <img
+            src="http://source.unsplash.com/random?tech"
+            alt="portfilio tech items"
+          />
+        </div>
+        <div class="portfolio-image-wrapper">
+          <img
+            src="http://source.unsplash.com/random?tech"
+            alt="portfilio tech items"
+          />
+        </div>
+        <div class="portfolio-image-wrapper">
+          <img
+            src="http://source.unsplash.com/random?tech"
+            alt="portfilio tech items"
+          />
+        </div>
+        <div class="portfolio-image-wrapper">
+          <img
+            src="http://source.unsplash.com/random?tech"
+            alt="portfilio tech items"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Contact Parallax -->
+    <div class="portfolio-bg-wrapper">
+      <div class="portfolio-bg-wrapper">
+        <span>Contact</span>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="about-wrapper">
+      <h3>Reach Out</h3>
+
+      <p>Let me know what you think!</p>
+
+      <div id="contact" class="contact-info-container">
+        <div class="contact-info-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3042.4027680798417!2d-111.68557868460721!3d40.311217879377494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874d9bed507857a7%3A0x81b6c4eeb16e0d08!2sDevPipeline!5e0!3m2!1sen!2sus!4v1674857228837!5m2!1sen!2sus"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+        <div class="contact-info-right">
+          <div class="contact-label">
+            <i class="fa-solid fa-location-dot"></i> Utah, USA
+          </div>
+          <div class="contact-label">
+            <i class="fa-solid fa-phone"></i> Phone:, +1 888-888-888
+          </div>
+          <div class="contact-label">
+            <i class="fa-solid fa-envelope"></i> Email: karely@fake.com
+          </div>
+
+          <form class="contact-info-form">
+            <div class="form-group">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
+            </div>
+
+            <div class="form-group">
+              <input type="text" placeholder="Message" />
+            </div>
+            <button>I Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="#">Back to Top</a>
+    </div>
+
+    <div class="social-icon-wrapper">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-snapchat"></i>
+      <i class="fab fa-pintrest-p"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin-in"></i>
+    </div>
+    <div class="copy-right-container">
+      &copy; 2023 Karely Partida | Regards to W3 Schools
     </div>
   </body>
 </html>
